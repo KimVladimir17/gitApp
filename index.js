@@ -15,7 +15,7 @@ function debounce(mainFunction, delay) {
 let result = [];
 
 function sendRequest(query) {
-  fetch(`https://git-app-blue.vercel.app/api/search?q=${query}`, {
+  fetch(`http://localhost:3002/api/search?q=${query}`, {
     method: "GET",
   })
     .then((res) => res.json())
