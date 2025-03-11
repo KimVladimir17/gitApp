@@ -10,7 +10,7 @@ const app = express();
 
 app.use(cors());
 const port = 3002;
-GITHUB_TOKEN = process.env.GITHUB_TOKEN;
+const GITHUB_TOKEN = process.env.GITHUB_TOKEN;
 
 
 app.get('/api/search', async (req , res) => 
