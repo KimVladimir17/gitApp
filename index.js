@@ -15,7 +15,7 @@ function debounce(mainFunction, delay) {
 let result = [];
 
 function sendRequest(query) {
-  fetch(`/api/search?q=${query}`, {
+  fetch(`${window.location.origin}/api/search?q=${query}`, {
     method: "GET",
   })
     .then((res) => res.json())
