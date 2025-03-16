@@ -1,6 +1,6 @@
 import fetch from "node-fetch";
 
-export default async function handler() {
+export default async function handler(req, res) {
   res.setHeader("Access-Control-Allow-Origin", ""); // Allow all domains ()
   res.setHeader("Access-Control-Allow-Methods", "GET, OPTIONS");
   res.setHeader("Access-Control-Allow-Headers", "Content-Type, Authorization");
