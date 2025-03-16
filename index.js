@@ -18,7 +18,7 @@ function sendRequest(query) {
   const isLocal = window.location.hostname === 'localhost';
   const apiUrl = isLocal ? 'http://localhost:3002' : 'https://git-app-blue.vercel.app';
   
-  fetch(`${apiUrl}/api/server?q=${query}`, {
+  fetch(`${apiUrl}/api?q=${query}`, {
     method: "GET",
   })
     .then((res) => res.json())
